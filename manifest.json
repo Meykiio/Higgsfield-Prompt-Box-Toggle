@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Higgsfield Prompt Toggle",
+  "version": "1.0.0",
+  "description": "Toggle the prompt bar on Higgsfield AI to reclaim screen space while browsing generated designs.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://higgsfield.ai/ai/image*"
+      ],
+      "js": ["content.js"],
+      "css": ["toggle.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
